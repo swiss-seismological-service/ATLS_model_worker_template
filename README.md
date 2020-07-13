@@ -18,17 +18,29 @@ Each file that requires alteration should contain instructions on what to alter.
 I would go through the following files in order, renaming the model as required:
 
 ramsis/sfm/em1/schema.py (model specific inputs defined)
+
 ramsis/sfm/em1/settings.py (defaults defined)
+
 ramsis/sfm/em1/server/model_adaptor.py (data conversions, formatting and further validation)
+
 ramsis/sfm/em1/core/utils.py (utililty functions used by model_adaptor)
+
 ramsis/sfm/em1/core/em1_model.py (actual model code should go here)
+
 ramsis/sfm/em1/core/error.py (error classes defined)
+
 ramsis/sfm/em1/tests/test_reimplementation.py (write tests)
+
 ramsis/sfm/em1/server/v1/routes.py (api configuration)
+
 ramsis/sfm/em1/server/app.py (app is defined, renaming required)
+
 setup.py
+
 README.md
+
 Any __init__.py files that contain the model name
+
 sphinx documentation
 
 
